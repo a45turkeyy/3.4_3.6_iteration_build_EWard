@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Music Website</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                
+                
+                        <a href="home.html">Home</a>
+                        <a href="page2.html">Artists</a>
+                     
+				<li><a href="page3.html">albums</a>
+                    <div class="dropdown">
+						 <a href="page3.html">80s albums</a>
+						 <a href="page3.html">90s album</a>
+						 <a href="page3.html">2000s Albums</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+<nav class="mobile-nav" id="mobileNav">
+    <ul>
+                        <a href="home.html">Home</a>
+                        <a href="page2.html">Artists</a>
+                     
+				<li><a href="page3.html"></a>
+                    <div class="dropdown">
+						 <a href="page3.html">80s albums</a>
+						 <a href="page3.html">90s album</a>
+						 <a href="page3.html">2000s Albums</a>
+                    </div>
+                </li>
+    </ul>
+</nav>
+
+    </header>
+    
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>Explore our extensive album database and uncover the stories behind your favorite records. Whether you're diving into classics or discovering new releases, our platform offers detailed insights and a curated experience to enhance your musical journey.</p>
+            <!-- Added image -->
+            <img src="images/slide3.jfif" alt="Music Image" style="width: 100%; max-width: 600px; height: auto;">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Music Database. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
