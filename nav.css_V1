@@ -1,0 +1,115 @@
+/* Basic styles for the page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+
+/* Burger Menu Icon */
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Desktop Navigation Menu */
+.nav-menu {
+    display: flex;
+    justify-content: left;
+	margin-top:2rem;
+}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    position: relative;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+/* Dropdown Menu */
+.nav-menu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.nav-menu .dropdown a {
+    padding: 10px;
+}
+
+.nav-menu li:hover .dropdown {
+    display: block;
+}
+
+/* Mobile Navigation Menu */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.mobile-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mobile-nav li {
+    margin: 0;
+}
+
+.mobile-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.mobile-nav a:hover {
+    background-color: #555;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .mobile-nav.active {
+        display: block;
+    }
+}
