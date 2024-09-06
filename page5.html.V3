@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="nav.css"> <!-- Updated to a unified CSS file -->
+</head>
+<body>
+    <header>
+        <h1>2000s Albums</h1>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</div>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="page2.html">Artists</a></li>
+                <li class="dropdown">
+                    <a href="page3.html">Albums</a>
+                    <div class="dropdown-content">
+                        <a href="page3.html">80s Albums</a>
+                        <a href="page4.html">90s Albums</a>
+                        <a href="page5.html">2000s Albums</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h2>2000s Albums</h2>
+                <p>Welcome to our music database website where you can explore artists and albums.
+				"Step into the 2000s and uncover the albums that defined the turn of the millennium. Our 2000s albums page celebrates the diverse range of music from this dynamic decade, from emerging indie sounds and pop hits to groundbreaking hip-hop and electronic influences. Dive into detailed reviews, track lists, and the stories behind the albums that shaped the 2000s musical landscape."</p>
+            </div>
+            <img src="images/slide3.jfif" alt="Music Image" class="intro-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Music Database. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
