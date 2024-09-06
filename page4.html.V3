@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="nav.css"> <!-- Updated to a unified CSS file -->
+</head>
+<body>
+    <header>
+        <h1>90s Albums</h1>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</div>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="page2.html">Artists</a></li>
+                <li class="dropdown">
+                    <a href="page3.html">Albums</a>
+                    <div class="dropdown-content">
+                        <a href="page3.html">80s Albums</a>
+                        <a href="page4.html">90s Albums</a>
+                        <a href="page5.html">2000s Albums</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h2>90s Albums</h2>
+                <p>Welcome to our music database website where you can explore artists and albums.
+				"Rediscover the albums that defined the 90s and left an indelible mark on music history. Our 90s albums page takes you on a nostalgic trip through grunge, hip-hop, pop, and alternative rock, highlighting the influential records that captured the essence of a transformative decade. Explore in-depth reviews, track details, and the stories behind these iconic releases."</p>
+            </div>
+            <img src="images/90's.jpg" alt="Music Image" class="intro-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Music Database. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
