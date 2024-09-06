@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Database</title>
+    <link rel="stylesheet" href="nav.css"> <!-- Updated to a unified CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Artist's</h1>
+        <div class="menu-icon" onclick="toggleMenu()" aria-label="Toggle navigation">☰</div>
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="page2.html">Artists</a></li>
+                <li class="dropdown">
+                    <a href="page3.html">Albums</a>
+                    <div class="dropdown-content">
+                        <a href="page3.html">80s Albums</a>
+                        <a href="page4.html">90s Albums</a>
+                        <a href="page5.html">2000s Albums</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <div class="intro-text">
+                <h2>Top Artists</h2>
+                <p>Welcome to our music database website where you can explore artists and albums.
+				"Dive into our artist profiles and explore the stories behind your favorite musicians. From iconic legends who shaped the sound of generations to emerging talents redefining the future of music, our curated profiles offer in-depth insights, exclusive interviews, and fascinating backgrounds. Get to know the artists who make the music you love.
+
+"</p>
+            </div>
+            <img src="images/slide2.jpg" alt="Music Image" class="intro-image">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Music Database. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
